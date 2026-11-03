@@ -14,7 +14,11 @@ python3 -m http.server 8000
 
 ## GitHub Pages
 
-Загрузите файлы в корень репозитория. В Settings → Pages выберите **Deploy from a branch**, ветку **main** и папку **/(root)**. Сайт будет доступен по адресу вида `https://<имя>.github.io/<репозиторий>/`. Все пути к файлам относительные, поэтому сайт работает и в подпапке репозитория.
+Файлы уже находятся в корне репозитория, а `.github/workflows/deploy.yml` публикует сайт при каждом push в `main`.
+
+Для первого запуска владелец репозитория должен открыть [Settings → Pages](https://github.com/ustinovlev039-cpu/lessson_coding/settings/pages) и выбрать **GitHub Actions** в поле **Source**. Затем на вкладке [Actions](https://github.com/ustinovlev039-cpu/lessson_coding/actions/workflows/deploy.yml) запустить workflow кнопкой **Run workflow**. После успешной публикации сайт будет доступен по адресу `https://ustinovlev039-cpu.github.io/lessson_coding/`.
+
+Все пути к файлам относительные, поэтому сайт работает в подпапке репозитория.
 
 ## Устройство
 
